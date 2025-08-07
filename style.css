@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #73c8a9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #373b44,
+    #73c8a9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #373b44,
+    #73c8a9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100vh;
+}
+.container {
+  visibility: hidden;
+  position: absolute;
+  width: 250px;
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.menu .item {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.item:hover {
+  padding: 5px 10px;
+  background-color: #b1b1b1;
+}
+.menu .item i {
+  padding-right: 10px;
+}
+.menu .setting {
+  border-top: 1px solid #73c8a9;
+  margin: 10px 0;
+  padding-top: 10px;
+}
+.menu .Share {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .Share .Share-menu {
+  list-style-type: none;
+  position: absolute;
+  left: 205px;
+  width: 140px;
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   visibility: hidden;
+}
+.menu .Share:hover .Share-menu{
+  visibility: visible;
+
+}
